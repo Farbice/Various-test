@@ -12,7 +12,8 @@ function bingo(tab, callback){
 
 }
 
-const retour = bingo(arrf, value => value * 52);
+const retour = bingo(arrf, value => value + 1);
 
 console.log(retour);
 console.log(arrf.map((value) => {return value * 53}));
+console.log(arrf.map((value) => {return 1/value}));
