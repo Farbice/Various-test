@@ -40,3 +40,18 @@ const moodOutput = moodSelect(moodindex, value => value / (value + 0.85));
 console.log(moodOutput);
 console.log(arrf.map((value) => {return value / (value + 0.85)}));
 
+
+
+function somme(a) {
+    a + a;
+}
+
+function produit(a) {
+    a * a;
+}
+
+function operation(a,callback){
+    return callback(a);
+}
+
+console.log(operation(5,somme(5)));
