@@ -1,3 +1,8 @@
+
+//CALLBACK FUNCTIONS
+//Return a new tab containing modified values, in a constant variable
+//Operations on the values are set when declaring the constant
+
 const arrf = [1, 2, 3, 4];
 
 function bingo(tab, callback){
@@ -20,6 +25,11 @@ console.log(arrf.map((value) => {return 1/value}));
 
 
 
+
+//__________________________
+//Return a new tab containing modified values, in a constant variable
+//like before, operations on the values are set when declaring the constant
+
 const moodindex = [1, 2, 3, 4];
 
 function moodSelect(tab, callback){
@@ -34,7 +44,6 @@ function moodSelect(tab, callback){
 
 }
 
-
 const moodOutput = moodSelect(moodindex, value => value / (value + 0.85));
 
 console.log(moodOutput);
@@ -42,16 +51,20 @@ console.log(arrf.map((value) => {return value / (value + 0.85)}));
 
 
 
-function somme(a) {
-    a + a;
+//__________________________
+//Return either a sum or a product of a number
+
+function sum(a){
+    return a + a;
 }
 
-function produit(a) {
-    a * a;
+function product(a){
+    return a * a;
 }
 
 function operation(a,callback){
     return callback(a);
 }
 
-console.log(operation(5,somme(5)));
+console.log(operation(5,sum));
+console.log(operation(5,product));
