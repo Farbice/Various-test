@@ -68,3 +68,11 @@ function operation(a,callback){
 
 console.log(operation(5,sum));
 console.log(operation(5,product));
+
+
+
+
+//__________________________
+//Example of common callback functions
+
+
